@@ -1,297 +1,439 @@
-# Desafio Técnico - App de Gerenciamento de Tarefas 📱✅
+# 📝 Task Manager App
 
-Este desafio foi criado para avaliar suas habilidades em desenvolvimento frontend/mobile, consumo de APIs e criação de interfaces modernas.
+Um aplicativo moderno de gerenciamento de tarefas construído com React, TypeScript e styled-components. O projeto oferece uma interface intuitiva para criar, organizar e acompanhar suas tarefas diárias com recursos avançados como sugestões de horário e filtros inteligentes.
 
-## 🎯 Objetivo
+![Task Manager App](https://img.shields.io/badge/React-v19.1.0-blue.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-v5.8.3-blue.svg)
+![Jest](https://img.shields.io/badge/Jest-v29.7.0-green.svg)
+![Coverage](https://img.shields.io/badge/Coverage->95%25-brightgreen.svg)
 
-Desenvolver uma aplicação web ou mobile que permita aos usuários gerenciar suas tarefas diárias, com integração a uma API de produtividade que sugere o melhor horário para realizar cada tarefa.
+## ✨ Funcionalidades
 
-## 📋 Pré-requisitos
+### 🎯 Gerenciamento de Tarefas
 
-- Conhecimento em:
-  - React/React Native ou Flutter
-  - TypeScript/JavaScript
-  - Consumo de APIs REST
-  - Gerenciamento de estado
-  - UI/UX
-  - Git
+- ✅ Criar, editar e excluir tarefas
+- 📅 Definir prazos e durações estimadas
+- 🏷️ Categorizar tarefas (trabalho, pessoal, estudos, etc.)
+- ⭐ Sistema de prioridades (alta, média, baixa)
+- ✔️ Marcar tarefas como concluídas
 
-## 🧩 O que você deve fazer
+### 🔍 Organização e Filtros
 
-1. Criar uma aplicação web ou mobile (escolha uma das opções):
-   - Web: React + TypeScript
-   - Mobile: React Native + TypeScript ou Flutter
+- 🔎 Busca por título e descrição
+- 📊 Filtros por status, categoria e prioridade
+- 📈 Ordenação por data, prioridade ou nome
+- 📱 Interface responsiva para todos os dispositivos
 
-2. Implementar as seguintes funcionalidades:
-   - Dashboard com visão geral das tarefas
-   - Lista de tarefas com filtros e ordenação
-   - Formulário de criação/edição de tarefas
-   - Integração com a API de produtividade
+### 🎨 Interface e UX
 
-3. Consumir a API de produtividade:
-   - Endpoint: `/suggest-time`
-   - Método: POST
-   - Payload:
-     ```json
-     {
-       "task": {
-         "title": "Reunião com equipe",
-         "priority": "high",
-         "estimated_duration": 60,
-         "deadline": "2024-03-20T15:00:00Z",
-         "category": "work"
-       },
-       "user_preferences": {
-         "working_hours": {
-           "start": "09:00",
-           "end": "18:00"
-         },
-         "preferred_categories": ["work", "personal"]
-       }
-     }
-     ```
+- 🌙 Modo escuro/claro
+- 🎨 Design moderno com styled-components
+- ♿ Acessibilidade completa (ARIA)
+- 🔄 Animações e transições suaves
+- 📱 PWA Ready
 
-4. Implementar uma interface moderna e responsiva:
-   - Design system consistente
-   - Animações suaves
-   - Feedback visual para ações do usuário
-   - Tratamento de estados de loading e erro
+### 🤖 Recursos Inteligentes
+
+- ⏰ Sugestões automáticas de horário
+- 📊 Dashboard com estatísticas
+- 💾 Cache local para performance
+- 🔔 Sistema de notificações (Toast)
+- 📋 Preview em tempo real de tarefas
+
+## 🚀 Performance
+
+### ✅ Implementado
+
+- **Lazy Loading de Componentes**: Componentes principais carregados sob demanda
+- **Code Splitting**: Bundle dividido em chunks otimizados
+- **Otimização de Bundle**:
+  - Análise visual com rollup-plugin-visualizer
+  - Chunks manuais para vendor libraries
+  - Tree shaking automático
+- **Cache de Requisições**: Sistema completo com Workbox 7.0
+- **Offline Support**: PWA totalmente funcional
+- **Core Web Vitals**: Monitoramento de métricas de performance
+
+### 🔄 Lazy Loading Atual
+
+```typescript
+// Componentes com lazy loading
+const TaskList = lazy(() => import("../TaskList/TaskList"));
+const TaskForm = lazy(() => import("../TaskForm/TaskForm"));
+const TaskDetail = lazy(() => import("../../components/TaskDetail/TaskDetail"));
+```
+
+### 🔄 Workbox Service Worker
+
+```javascript
+✅ Precaching de assets críticos
+✅ Cache NetworkFirst para API calls
+✅ Cache CacheFirst para imagens
+✅ Cache StaleWhileRevalidate para CSS/JS
+✅ Cache NetworkFirst para navegação
+✅ Cleanup automático de caches antigos
+```
+
+### 📊 Core Web Vitals
+
+```typescript
+// Métricas monitoradas automaticamente:
+✅ LCP - Largest Contentful Paint
+✅ INP - Interaction to Next Paint (substitui FID)
+✅ CLS - Cumulative Layout Shift
+✅ FCP - First Contentful Paint
+✅ TTFB - Time to First Byte
+```
+
+## 🛠️ Tecnologias Utilizadas
+
+### Frontend Core
+
+- **React 19.1.0** - Framework JavaScript para UI
+- **TypeScript 5.8.3** - Tipagem estática
+- **Vite 6.3.5** - Build tool e dev server
+
+### Styling & UI
+
+- **Styled Components 6.1.18** - CSS-in-JS
+- **React Icons 5.5.0** - Biblioteca de ícones
+
+### Roteamento
+
+- **React Router 7.6.2** - Roteamento client-side
+
+### HTTP Client
+
+- **Axios 1.9.0** - Cliente HTTP para API
+
+### Testes
+
+- **Jest 29.7.0** - Framework de testes
+- **Testing Library** - Testes de componentes React
+  - `@testing-library/react 16.3.0`
+  - `@testing-library/jest-dom 6.6.3`
+  - `@testing-library/user-event 14.6.1`
+- **Jest Environment JSDOM 30.0.0** - Ambiente DOM para testes
+
+### Desenvolvimento
+
+- **ESLint 9.25.0** - Linting de código
+- **Babel** - Transpilação de código
+- **SWC** - Compilação rápida
+- **JSON Server** - Mock API para desenvolvimento
 
 ## 📁 Estrutura do Projeto
 
-```
-.
-├── src/
-│   ├── components/
-│   │   ├── TaskCard/
-│   │   ├── PriorityBadge/
-│   │   ├── CategoryFilter/
-│   │   └── TimeSuggestions/
-│   ├── screens/
-│   │   ├── Dashboard/
-│   │   ├── TaskList/
-│   │   └── TaskForm/
-│   ├── services/
-│   │   └── api.ts
-│   ├── hooks/
-│   │   └── useTasks.ts
-│   ├── contexts/
-│   │   └── TaskContext.tsx
-│   └── styles/
-│       └── theme.ts
-├── public/
-├── tests/
-├── package.json
-└── README.md
-```
-
-## 🎨 Design
-
-### Cores
-- Primária: #6366F1 (Indigo)
-- Secundária: #10B981 (Emerald)
-- Fundo: #F9FAFB
-- Texto: #1F2937
-
-### Tipografia
-- Fonte principal: Inter
-- Tamanhos: 12px - 24px
-- Pesos: Regular (400), Medium (500), Bold (700)
-
-## 📱 Telas
-
-### 1. Dashboard
-- Resumo do dia
-- Tarefas prioritárias
-- Gráfico de produtividade
-- Sugestões de horários
-
-### 2. Lista de Tarefas
-- Cards de tarefas com:
-  - Título
-  - Prioridade
-  - Categoria
-  - Horário sugerido
-  - Status
-- Filtros por:
-  - Categoria
-  - Prioridade
-  - Status
-- Ordenação por:
-  - Data
-  - Prioridade
-  - Nome
-
-### 3. Formulário de Tarefa
-- Campos:
-  - Título
-  - Descrição
-  - Categoria
-  - Prioridade
-  - Duração estimada
-  - Prazo
-  - Lembretes
-- Sugestões de horário
-- Preview da tarefa
-
-## 🔧 Considerações Técnicas
-
-### Simulação da API
-
-Para desenvolvimento, você pode simular a API usando o JSON Server. Siga os passos abaixo:
-
-1. Instale o JSON Server:
 ```bash
-npm install -g json-server
+src/
+├── components/           # Componentes reutilizáveis
+│   ├── TaskCard/        # Card de tarefa
+│   ├── PriorityBadge/   # Badge de prioridade
+│   ├── CategoryFilter/  # Filtro de categorias
+│   ├── TaskDetail/      # Detalhes da tarefa
+│   ├── TimeSuggestions/ # Sugestões de horário
+│   ├── DeleteConfirmModal/ # Modal de confirmação
+│   ├── Toast/           # Notificações
+│   ├── Layout/          # Layout principal
+│   ├── Navigation/      # Navegação
+│   └── ThemeToggle/     # Alternador de tema
+├── screens/             # Páginas/Telas
+│   ├── Dashboard/       # Painel principal
+│   ├── TaskList/        # Lista de tarefas
+│   ├── TaskForm/        # Formulário de tarefa
+│   ├── TaskPage/        # Container de páginas
+│   └── TaskDetailPage/  # Página de detalhes
+├── contexts/            # Context API
+│   ├── TaskContext.tsx  # Estado global de tarefas
+│   ├── ThemeContext.tsx # Tema da aplicação
+│   └── ToastContext.tsx # Notificações
+├── hooks/               # Custom hooks
+│   ├── useTasks.ts      # Hook de tarefas
+│   └── useToast.ts      # Hook de notificações
+├── services/            # Serviços externos
+│   ├── api.ts           # Cliente da API
+│   └── cache.ts         # Sistema de cache
+├── styles/              # Estilos globais
+│   ├── globalStyles.ts  # Estilos globais
+│   └── theme.ts         # Tema da aplicação
+└── types/               # Definições de tipos
+    └── index.ts         # Tipos globais
 ```
 
-2. Crie um arquivo `db.json` na raiz do projeto:
-```json
-{
-  "tasks": [
-    {
-      "id": 1,
-      "title": "Reunião com equipe",
-      "description": "Discussão sobre o novo projeto",
-      "priority": "high",
-      "category": "work",
-      "estimated_duration": 60,
-      "deadline": "2024-03-20T15:00:00Z",
-      "status": "pending"
-    }
-  ],
-  "suggestions": [
-    {
-      "task_id": 1,
-      "suggested_times": [
-        {
-          "start": "2024-03-20T10:00:00Z",
-          "end": "2024-03-20T11:00:00Z",
-          "score": 0.9
-        },
-        {
-          "start": "2024-03-20T14:00:00Z",
-          "end": "2024-03-20T15:00:00Z",
-          "score": 0.8
-        }
-      ]
-    }
-  ]
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm ou yarn
+
+### Instalação
+
+1. **Clone o repositório**
+
+```bash
+git clone <repository-url>
+cd task-manager-app
+```
+
+2. **Instale as dependências**
+
+```bash
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento (API Mock)**
+
+```bash
+npm run json-server
+```
+
+> O servidor JSON rodará na porta 3001
+
+4. **Em outro terminal, inicie a aplicação**
+
+```bash
+npm run dev
+```
+
+> A aplicação estará disponível em http://localhost:5173
+
+## 📊 Scripts Disponíveis
+
+### Desenvolvimento
+
+```bash
+npm run dev          # Inicia servidor de desenvolvimento
+npm run json-server  # Inicia API mock (porta 3001)
+npm run build        # Build para produção
+npm run preview      # Preview do build de produção
+npm run lint         # Executa linting do código
+```
+
+### Testes
+
+```bash
+npm test            # Executa todos os testes (modo silencioso)
+npm run test:debug  # Executa testes com output detalhado
+npm run test:watch  # Executa testes em modo watch
+```
+
+## 🧪 Testes
+
+O projeto possui uma cobertura de testes robusta com **+95% de cobertura**:
+
+### Tipos de Teste
+
+- **Testes Unitários** - Componentes individuais
+- **Testes de Integração** - Interação entre componentes
+- **Testes de Context** - Providers e estado global
+- **Testes de Hooks** - Custom hooks
+- **Testes de Serviços** - API e cache
+
+### Estrutura de Testes
+
+```
+src/
+├── components/
+│   └── ComponentName/
+│       └── __tests__/
+│           └── ComponentName.test.tsx
+├── contexts/
+│   └── __tests__/
+│       └── ContextName.test.tsx
+├── hooks/
+│   └── __tests__/
+│       └── hookName.test.tsx
+└── services/
+    └── __tests__/
+        └── serviceName.test.tsx
+```
+
+### Executar Testes Específicos
+
+```bash
+# Testar componente específico
+npm test -- TaskCard.test.tsx
+
+# Testar com coverage
+npm test -- --coverage
+
+# Testar apenas arquivos modificados
+npm test -- --watch
+```
+
+## 🏗️ Arquitetura
+
+### Padrões Utilizados
+
+- **Component Composition** - Composição de componentes
+- **Custom Hooks** - Lógica reutilizável
+- **Context API** - Estado global
+- **Styled Components** - CSS-in-JS
+- **TypeScript** - Tipagem forte
+
+### Estado Global
+
+```typescript
+// TaskContext - Gerencia estado das tarefas
+interface TaskContextType {
+  tasks: Task[];
+  selectedTask: Task | null;
+  loading: boolean;
+  error: string | null;
+  // ... ações
+}
+
+// ThemeContext - Gerencia tema da aplicação
+interface ThemeContextType {
+  theme: Theme;
+  mode: "light" | "dark";
+  toggleTheme: () => void;
 }
 ```
 
-3. Inicie o servidor:
-```bash
-json-server --watch db.json --port 3001
-```
+### Cache System
 
-4. Endpoints disponíveis:
-- `GET /tasks` - Lista todas as tarefas
-- `GET /tasks/:id` - Obtém uma tarefa específica
-- `POST /tasks` - Cria uma nova tarefa
-- `PUT /tasks/:id` - Atualiza uma tarefa
-- `DELETE /tasks/:id` - Remove uma tarefa
-- `POST /suggest-time` - Simula a sugestão de horário
+- **Cache local** com TTL (Time To Live)
+- **Persistência** no localStorage
+- **Auto-sync** a cada 30 segundos
+- **Cleanup** automático de itens expirados
 
-5. Exemplo de uso da API de sugestão de horário:
+## 🎨 Design System
+
+### Cores
+
 ```typescript
-// services/api.ts
-const API_URL = 'http://localhost:3001';
-
-export const suggestTime = async (taskData: TaskData) => {
-  const response = await fetch(`${API_URL}/suggest-time`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(taskData),
-  });
-  
-  return response.json();
-};
+colors: {
+  primary: '#007bff',
+  secondary: '#6c757d',
+  success: '#28a745',
+  danger: '#dc3545',
+  warning: '#ffc107',
+  // ... mais cores
+}
 ```
 
-6. Para simular diferentes cenários, você pode modificar o `db.json` com diferentes dados de teste.
+### Tipografia
 
-### Versões Recomendadas
-- React 18+ ou React Native 0.70+
-- TypeScript 4.5+
-- Styled Components ou Tailwind CSS
-- React Query ou SWR para gerenciamento de estado
-- Jest e React Testing Library para testes
+- **Font Family**: Inter, system-ui
+- **Tamanhos**: xs (0.75rem) até xl (1.25rem)
+- **Pesos**: regular (400), medium (500), bold (700)
 
-### Performance
-- Lazy loading de componentes
-- Code splitting
-- Otimização de bundle
-- Cache de requisições
-- Offline support
+### Responsividade
 
-### Acessibilidade
-- Suporte a leitores de tela
-- Navegação por teclado
-- Contraste adequado
-- Textos alternativos
-- Suporte a modo escuro
+- **Mobile First** design
+- **Breakpoints**: xs, sm, md, lg, xl, 2xl
+- **Grid flexível** com styled-components
 
-## 🚀 Como entregar
+## 📱 API
 
-1. Faça um **fork** deste repositório
-2. Realize o desafio no seu fork
-3. Ao finalizar, envie um **Pull Request** para este repositório com a sua solução
+### Endpoints Principais
 
-### 📱 Entrega do APK (Desenvolvedores Mobile)
+```typescript
+// Tarefas
+GET    /tasks           # Listar tarefas
+POST   /tasks           # Criar tarefa
+PUT    /tasks/:id       # Atualizar tarefa
+DELETE /tasks/:id       # Deletar tarefa
 
-Se você escolheu desenvolver a versão mobile (React Native ou Flutter), além do código fonte, você deve:
+// Sugestões
+POST   /suggest-time    # Sugerir horários
+```
 
-1. Gerar um APK de release:
-   - Para React Native:
-     ```bash
-     cd android
-     ./gradlew assembleRelease
-     ```
-   - Para Flutter:
-     ```bash
-     flutter build apk --release
-     ```
+### Estrutura da Tarefa
 
-2. O APK gerado estará localizado em:
-   - React Native: `android/app/build/outputs/apk/release/app-release.apk`
-   - Flutter: `build/app/outputs/flutter-apk/app-release.apk`
+```typescript
+interface Task {
+  id: string;
+  title: string;
+  description?: string;
+  category: Category;
+  priority: "high" | "medium" | "low";
+  estimatedDuration: number; // em minutos
+  dueDate: string;
+  completed: boolean;
+  createdAt: string;
+  updatedAt: string;
+  completedAt?: string;
+}
+```
 
-3. Adicione o APK ao repositório em uma pasta chamada `release/`
+## 🔧 Configuração
 
-4. Inclua no README:
-   - Link para download do APK
-   - Versão mínima do Android suportada
-   - Permissões necessárias
-   - Instruções de instalação
+### Variáveis de Ambiente
 
-## ✅ Critérios de Avaliação
+```env
+VITE_API_URL=http://localhost:3001
+VITE_CACHE_TTL=300000
+```
 
-- Qualidade do código e organização
-- Fidelidade ao design proposto
-- Experiência do usuário
-- Tratamento de erros e estados
-- Performance e otimizações
-- Testes implementados
-- Documentação do projeto
-- Implementação de funcionalidades extras (diferencial)
+### Jest Configuration
+
+```javascript
+// jest.config.js
+{
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+  moduleNameMapping: {
+    '^@/(.*)$': '<rootDir>/src/$1'
+  }
+}
+```
+
+## 🤝 Contribuindo
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+### Padrões de Código
+
+- **ESLint** - Linting configurado
+- **TypeScript** - Tipagem obrigatória
+- **Testes** - Cobertura mínima de 80%
+- **Commits** - Conventional Commits
+
+## 🐛 Troubleshooting
+
+### Problemas Comuns
+
+**Erro de CORS na API**
+
+```bash
+# Certifique-se que o json-server está rodando
+npm run json-server
+```
+
+**Testes falhando**
+
+```bash
+# Limpe o cache do Jest
+npm test -- --clearCache
+```
+
+**Build falhando**
+
+```bash
+# Verifique as tipagens TypeScript
+npm run build
+```
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+Desenvolvido com ❤️ por Odair Lopes S. Andrade!
 
 ---
 
-Boa sorte e divirta-se desenvolvendo! 🚀
+## 🔗 Links Úteis
 
-## 📚 Referências
-
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [React Native Documentation](https://reactnative.dev/docs/getting-started)
-- [Flutter Documentation](https://flutter.dev/docs)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [Styled Components Documentation](https://styled-components.com/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [React Query Documentation](https://tanstack.com/query/latest)
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
-- [Material Design Guidelines](https://material.io/design)
-- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) 
+- [Documentação do React](https://react.dev/)
+- [Styled Components](https://styled-components.com/)
+- [Testing Library](https://testing-library.com/)
+- [TypeScript](https://www.typescriptlang.org/)

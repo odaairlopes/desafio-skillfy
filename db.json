@@ -1,0 +1,606 @@
+{
+  "tasks": [
+    {
+      "id": "2",
+      "title": "Revisar código do frontend",
+      "description": "Analisar e otimizar componentes React",
+      "priority": "medium",
+      "category": "trabalho",
+      "estimated_duration": 120,
+      "deadline": "2024-03-22T18:00:00Z",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2024-03-22T18:00:00Z",
+      "estimatedDuration": 120,
+      "createdAt": "2025-06-09T21:50:20.804Z",
+      "updatedAt": "2025-06-09T21:50:22.406Z"
+    },
+    {
+      "id": "3",
+      "title": "Consulta médica",
+      "description": "Check-up anual com cardiologista",
+      "priority": "high",
+      "category": "saúde",
+      "estimated_duration": 45,
+      "deadline": "2024-03-25T14:00:00Z",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2024-03-25T14:00:00Z",
+      "estimatedDuration": 45,
+      "createdAt": "2025-06-09T21:35:43.074Z",
+      "updatedAt": "2025-06-09T21:35:50.117Z"
+    },
+    {
+      "id": "4",
+      "title": "Estudar TypeScript",
+      "description": "Completar curso de TypeScript avançado",
+      "priority": "medium",
+      "category": "estudos",
+      "estimated_duration": 180,
+      "deadline": "2024-03-30T20:00:00Z",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2024-03-30T20:00:00Z",
+      "estimatedDuration": 180,
+      "createdAt": "2025-06-09T21:58:56.097Z",
+      "updatedAt": "2025-06-09T21:58:57.796Z",
+      "completedAt": "2025-06-09T21:58:57.796Z",
+      "completed_at": "2025-06-09T21:58:57.817Z"
+    },
+    {
+      "id": "5",
+      "title": "Comprar presentes de aniversário",
+      "description": "Escolher e comprar presentes para festa da Maria",
+      "priority": "low",
+      "category": "pessoal",
+      "estimated_duration": 90,
+      "deadline": "2024-03-28T19:00:00Z",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2024-03-28T19:00:00Z",
+      "estimatedDuration": 90,
+      "createdAt": "2025-06-09T21:58:56.097Z",
+      "updatedAt": "2025-06-09T21:58:59.601Z",
+      "completedAt": "2025-06-09T21:58:59.601Z",
+      "completed_at": "2025-06-09T21:58:59.623Z"
+    },
+    {
+      "id": "6",
+      "title": "Limpar a garagem",
+      "description": "Organizar e limpar toda a garagem",
+      "priority": "low",
+      "category": "casa",
+      "estimated_duration": 240,
+      "deadline": "2024-04-05T16:00:00Z",
+      "status": "pending"
+    },
+    {
+      "id": "7",
+      "title": "Preparar apresentação",
+      "description": "Criar slides para apresentação do trimestre",
+      "priority": "high",
+      "category": "trabalho",
+      "estimated_duration": 150,
+      "deadline": "2024-03-21T09:00:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "8",
+      "title": "Pagar contas do mês",
+      "description": "Quitar todas as contas pendentes",
+      "priority": "medium",
+      "category": "financeiro",
+      "estimated_duration": 30,
+      "deadline": "2024-03-31T23:59:00Z",
+      "status": "pending"
+    },
+    {
+      "id": "9",
+      "title": "Academia - treino de pernas",
+      "description": "Sessão de treino focada em membros inferiores",
+      "priority": "medium",
+      "category": "saúde",
+      "estimated_duration": 75,
+      "deadline": "2024-03-23T19:00:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "10",
+      "title": "Assistir filme com a família",
+      "description": "Sessão de cinema em casa no fim de semana",
+      "priority": "low",
+      "category": "lazer",
+      "estimated_duration": 120,
+      "deadline": "2024-03-24T21:00:00Z",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2024-03-24T21:00:00Z",
+      "estimatedDuration": 120,
+      "createdAt": "2025-06-09T21:55:44.900Z",
+      "updatedAt": "2025-06-09T21:55:46.397Z"
+    },
+    {
+      "id": "12",
+      "title": "teste de tarefa criada hoje",
+      "description": "",
+      "priority": "low",
+      "category": "pessoal",
+      "estimated_duration": 60,
+      "deadline": "2025-06-09T20:00",
+      "status": "pending"
+    },
+    {
+      "id": "13",
+      "title": "tarefa teste novamente",
+      "description": "",
+      "priority": "medium",
+      "category": "casa",
+      "estimated_duration": 60,
+      "deadline": "2025-06-21T05:00",
+      "status": "pending"
+    },
+    {
+      "id": "14",
+      "title": "teste 3",
+      "description": "aaa",
+      "priority": "medium",
+      "category": "pessoal",
+      "estimated_duration": 60,
+      "deadline": "2025-06-17T14:00",
+      "status": "pending"
+    },
+    {
+      "id": "15",
+      "title": "tarefa de alta prioridade",
+      "description": "teste",
+      "priority": "high",
+      "category": "saúde",
+      "estimated_duration": 60,
+      "deadline": "2025-06-22T04:00",
+      "status": "pending"
+    },
+    {
+      "id": "16",
+      "title": "Criação de tarefa teste",
+      "description": "",
+      "priority": "medium",
+      "category": "financeiro",
+      "estimated_duration": 60,
+      "deadline": "2025-06-13T08:00",
+      "status": "completed",
+      "completed": true,
+      "dueDate": "2025-06-13T08:00",
+      "estimatedDuration": 60,
+      "createdAt": "2025-06-11T02:53:49.832Z",
+      "updatedAt": "2025-06-11T02:54:02.344Z",
+      "completedAt": "2025-06-11T02:54:02.343Z",
+      "completed_at": "2025-06-11T02:54:02.362Z"
+    }
+  ],
+  "suggestions": [
+    {
+      "task_id": 1,
+      "suggested_times": [
+        {
+          "start": "2025-06-15T10:00:00Z",
+          "end": "2025-06-15T11:00:00Z",
+          "score": 0.9
+        },
+        {
+          "start": "2025-06-20T14:00:00Z",
+          "end": "2025-06-20T15:00:00Z",
+          "score": 0.8
+        }
+      ],
+      "id": "2db4"
+    },
+    {
+      "category": "trabalho",
+      "suggested_times": [
+        {
+          "start": "2025-06-11T09:00:00Z",
+          "end": "2025-06-11T10:30:00Z",
+          "score": 0.95,
+          "reason": "Horário de alta produtividade"
+        },
+        {
+          "start": "2025-06-12T10:30:00Z",
+          "end": "2025-06-12T12:00:00Z",
+          "score": 0.9,
+          "reason": "Período de concentração ideal"
+        },
+        {
+          "start": "2025-06-16T14:00:00Z",
+          "end": "2025-06-16T15:30:00Z",
+          "score": 0.85,
+          "reason": "Pós-almoço, boa para tarefas estruturadas"
+        },
+        {
+          "start": "2025-06-18T15:30:00Z",
+          "end": "2025-06-18T17:00:00Z",
+          "score": 0.8,
+          "reason": "Final da tarde, ideal para revisões"
+        },
+        {
+          "start": "2025-06-23T09:00:00Z",
+          "end": "2025-06-23T10:30:00Z",
+          "score": 0.92,
+          "reason": "Segunda-feira produtiva"
+        },
+        {
+          "start": "2025-06-25T14:00:00Z",
+          "end": "2025-06-25T15:30:00Z",
+          "score": 0.88,
+          "reason": "Meio da semana, energia renovada"
+        }
+      ],
+      "id": "work_suggestions"
+    },
+    {
+      "category": "estudos",
+      "suggested_times": [
+        {
+          "start": "2025-06-11T08:00:00Z",
+          "end": "2025-06-11T09:30:00Z",
+          "score": 0.95,
+          "reason": "Mente fresca pela manhã"
+        },
+        {
+          "start": "2025-06-13T10:00:00Z",
+          "end": "2025-06-13T11:30:00Z",
+          "score": 0.9,
+          "reason": "Período de máxima concentração"
+        },
+        {
+          "start": "2025-06-15T19:00:00Z",
+          "end": "2025-06-15T20:30:00Z",
+          "score": 0.8,
+          "reason": "Noite tranquila para estudos"
+        },
+        {
+          "start": "2025-06-17T20:30:00Z",
+          "end": "2025-06-17T22:00:00Z",
+          "score": 0.75,
+          "reason": "Revisão noturna"
+        },
+        {
+          "start": "2025-06-21T08:00:00Z",
+          "end": "2025-06-21T09:30:00Z",
+          "score": 0.93,
+          "reason": "Sábado de estudos intensivos"
+        },
+        {
+          "start": "2025-06-28T10:00:00Z",
+          "end": "2025-06-28T11:30:00Z",
+          "score": 0.87,
+          "reason": "Final do mês, última revisão"
+        }
+      ],
+      "id": "study_suggestions"
+    },
+    {
+      "category": "saúde",
+      "suggested_times": [
+        {
+          "start": "2025-06-12T07:00:00Z",
+          "end": "2025-06-12T08:00:00Z",
+          "score": 0.9,
+          "reason": "Exercícios matinais"
+        },
+        {
+          "start": "2025-06-14T12:00:00Z",
+          "end": "2025-06-14T13:00:00Z",
+          "score": 0.85,
+          "reason": "Horário de almoço para consultas"
+        },
+        {
+          "start": "2025-06-16T18:00:00Z",
+          "end": "2025-06-16T19:00:00Z",
+          "score": 0.9,
+          "reason": "Final do dia para atividades físicas"
+        },
+        {
+          "start": "2025-06-19T19:30:00Z",
+          "end": "2025-06-19T20:30:00Z",
+          "score": 0.8,
+          "reason": "Academia menos movimentada"
+        },
+        {
+          "start": "2025-06-22T07:00:00Z",
+          "end": "2025-06-22T08:00:00Z",
+          "score": 0.92,
+          "reason": "Domingo ativo"
+        },
+        {
+          "start": "2025-06-26T18:00:00Z",
+          "end": "2025-06-26T19:00:00Z",
+          "score": 0.88,
+          "reason": "Quinta-feira energética"
+        }
+      ],
+      "id": "health_suggestions"
+    },
+    {
+      "category": "pessoal",
+      "suggested_times": [
+        {
+          "start": "2025-06-13T11:00:00Z",
+          "end": "2025-06-13T12:00:00Z",
+          "score": 0.8,
+          "reason": "Meio da manhã livre"
+        },
+        {
+          "start": "2025-06-15T15:00:00Z",
+          "end": "2025-06-15T16:00:00Z",
+          "score": 0.85,
+          "reason": "Tarde relaxante"
+        },
+        {
+          "start": "2025-06-17T17:00:00Z",
+          "end": "2025-06-17T18:00:00Z",
+          "score": 0.9,
+          "reason": "Final da tarde disponível"
+        },
+        {
+          "start": "2025-06-20T20:00:00Z",
+          "end": "2025-06-20T21:00:00Z",
+          "score": 0.75,
+          "reason": "Noite livre para atividades pessoais"
+        },
+        {
+          "start": "2025-06-24T15:00:00Z",
+          "end": "2025-06-24T16:00:00Z",
+          "score": 0.83,
+          "reason": "Terça-feira tranquila"
+        },
+        {
+          "start": "2025-06-29T11:00:00Z",
+          "end": "2025-06-29T12:00:00Z",
+          "score": 0.78,
+          "reason": "Domingo pessoal"
+        }
+      ],
+      "id": "personal_suggestions"
+    },
+    {
+      "category": "casa",
+      "suggested_times": [
+        {
+          "start": "2025-06-14T08:00:00Z",
+          "end": "2025-06-14T10:00:00Z",
+          "score": 0.9,
+          "reason": "Manhã de sábado ideal para limpeza"
+        },
+        {
+          "start": "2025-06-16T14:00:00Z",
+          "end": "2025-06-16T16:00:00Z",
+          "score": 0.85,
+          "reason": "Tarde para organização"
+        },
+        {
+          "start": "2025-06-18T16:00:00Z",
+          "end": "2025-06-18T18:00:00Z",
+          "score": 0.8,
+          "reason": "Final da tarde para tarefas domésticas"
+        },
+        {
+          "start": "2025-06-21T08:00:00Z",
+          "end": "2025-06-21T10:00:00Z",
+          "score": 0.92,
+          "reason": "Sábado de organização"
+        },
+        {
+          "start": "2025-06-25T16:00:00Z",
+          "end": "2025-06-25T18:00:00Z",
+          "score": 0.82,
+          "reason": "Quarta-feira de manutenção"
+        },
+        {
+          "start": "2025-06-28T08:00:00Z",
+          "end": "2025-06-28T10:00:00Z",
+          "score": 0.87,
+          "reason": "Limpeza de final de mês"
+        }
+      ],
+      "id": "home_suggestions"
+    },
+    {
+      "category": "financeiro",
+      "suggested_times": [
+        {
+          "start": "2025-06-11T09:00:00Z",
+          "end": "2025-06-11T10:00:00Z",
+          "score": 0.95,
+          "reason": "Início do dia para foco financeiro"
+        },
+        {
+          "start": "2025-06-13T11:00:00Z",
+          "end": "2025-06-13T12:00:00Z",
+          "score": 0.9,
+          "reason": "Horário bancário disponível"
+        },
+        {
+          "start": "2025-06-16T14:00:00Z",
+          "end": "2025-06-16T15:00:00Z",
+          "score": 0.85,
+          "reason": "Pós-almoço para organização financeira"
+        },
+        {
+          "start": "2025-06-23T09:00:00Z",
+          "end": "2025-06-23T10:00:00Z",
+          "score": 0.93,
+          "reason": "Segunda-feira para planejamento"
+        },
+        {
+          "start": "2025-06-27T11:00:00Z",
+          "end": "2025-06-27T12:00:00Z",
+          "score": 0.88,
+          "reason": "Sexta-feira para fechamento"
+        },
+        {
+          "start": "2025-06-30T09:00:00Z",
+          "end": "2025-06-30T10:00:00Z",
+          "score": 0.97,
+          "reason": "Último dia do mês - fechamento"
+        }
+      ],
+      "id": "finance_suggestions"
+    },
+    {
+      "category": "lazer",
+      "suggested_times": [
+        {
+          "start": "2025-06-13T19:00:00Z",
+          "end": "2025-06-13T21:00:00Z",
+          "score": 0.95,
+          "reason": "Noite ideal para entretenimento"
+        },
+        {
+          "start": "2025-06-15T15:00:00Z",
+          "end": "2025-06-15T17:00:00Z",
+          "score": 0.9,
+          "reason": "Tarde de fim de semana"
+        },
+        {
+          "start": "2025-06-17T21:00:00Z",
+          "end": "2025-06-17T23:00:00Z",
+          "score": 0.85,
+          "reason": "Final da noite relaxante"
+        },
+        {
+          "start": "2025-06-21T15:00:00Z",
+          "end": "2025-06-21T17:00:00Z",
+          "score": 0.93,
+          "reason": "Sábado de diversão"
+        },
+        {
+          "start": "2025-06-22T19:00:00Z",
+          "end": "2025-06-22T21:00:00Z",
+          "score": 0.91,
+          "reason": "Domingo de relaxamento"
+        },
+        {
+          "start": "2025-06-28T20:00:00Z",
+          "end": "2025-06-28T22:00:00Z",
+          "score": 0.86,
+          "reason": "Fim de semana especial"
+        }
+      ],
+      "id": "leisure_suggestions"
+    },
+    {
+      "priority": "high",
+      "suggested_times": [
+        {
+          "start": "2025-06-11T09:00:00Z",
+          "end": "2025-06-11T10:30:00Z",
+          "score": 0.95,
+          "reason": "Prioridade alta requer energia matinal"
+        },
+        {
+          "start": "2025-06-12T10:30:00Z",
+          "end": "2025-06-12T12:00:00Z",
+          "score": 0.9,
+          "reason": "Concentração máxima pela manhã"
+        },
+        {
+          "start": "2025-06-16T09:00:00Z",
+          "end": "2025-06-16T10:30:00Z",
+          "score": 0.93,
+          "reason": "Segunda-feira energética"
+        },
+        {
+          "start": "2025-06-18T08:30:00Z",
+          "end": "2025-06-18T10:00:00Z",
+          "score": 0.92,
+          "reason": "Quarta-feira produtiva"
+        },
+        {
+          "start": "2025-06-23T09:00:00Z",
+          "end": "2025-06-23T10:30:00Z",
+          "score": 0.94,
+          "reason": "Nova semana, alta energia"
+        }
+      ],
+      "id": "high_priority_suggestions"
+    },
+    {
+      "priority": "medium",
+      "suggested_times": [
+        {
+          "start": "2025-06-12T14:00:00Z",
+          "end": "2025-06-12T15:30:00Z",
+          "score": 0.8,
+          "reason": "Tarde produtiva para tarefas médias"
+        },
+        {
+          "start": "2025-06-14T15:30:00Z",
+          "end": "2025-06-14T17:00:00Z",
+          "score": 0.75,
+          "reason": "Período estável de produtividade"
+        },
+        {
+          "start": "2025-06-17T14:00:00Z",
+          "end": "2025-06-17T15:30:00Z",
+          "score": 0.78,
+          "reason": "Terça-feira equilibrada"
+        },
+        {
+          "start": "2025-06-19T13:30:00Z",
+          "end": "2025-06-19T15:00:00Z",
+          "score": 0.76,
+          "reason": "Quinta-feira moderada"
+        },
+        {
+          "start": "2025-06-24T14:00:00Z",
+          "end": "2025-06-24T15:30:00Z",
+          "score": 0.82,
+          "reason": "Terça-feira de meio período"
+        }
+      ],
+      "id": "medium_priority_suggestions"
+    },
+    {
+      "priority": "low",
+      "suggested_times": [
+        {
+          "start": "2025-06-13T17:00:00Z",
+          "end": "2025-06-13T18:00:00Z",
+          "score": 0.7,
+          "reason": "Final do dia para tarefas simples"
+        },
+        {
+          "start": "2025-06-15T20:00:00Z",
+          "end": "2025-06-15T21:00:00Z",
+          "score": 0.65,
+          "reason": "Noite tranquila para tarefas leves"
+        },
+        {
+          "start": "2025-06-18T17:00:00Z",
+          "end": "2025-06-18T18:00:00Z",
+          "score": 0.68,
+          "reason": "Final da tarde relaxante"
+        },
+        {
+          "start": "2025-06-22T20:00:00Z",
+          "end": "2025-06-22T21:00:00Z",
+          "score": 0.72,
+          "reason": "Domingo sem pressa"
+        },
+        {
+          "start": "2025-06-26T17:30:00Z",
+          "end": "2025-06-26T18:30:00Z",
+          "score": 0.67,
+          "reason": "Quinta-feira sem pressão"
+        },
+        {
+          "start": "2025-06-29T19:00:00Z",
+          "end": "2025-06-29T20:00:00Z",
+          "score": 0.69,
+          "reason": "Domingo de final de mês"
+        }
+      ],
+      "id": "low_priority_suggestions"
+    }
+  ]
+}
